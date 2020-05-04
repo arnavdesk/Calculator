@@ -9,6 +9,7 @@ body{
     padding: 0px;
     width: 100%;
     height: 100vh;
+    
 }
 
 main{
@@ -20,6 +21,7 @@ main{
 }
 
 button{
+    outline: 0;
     text-align: center;
     padding: 0px;
     font-weight: 300;
@@ -48,13 +50,23 @@ button{
     justify-content: flex-end;
     align-items: flex-end;
     border-bottom: 5px solid lightgray;
-    
+    min-height: 130px;
+   
 }
 
 #result{
+    overflow-x: scroll;
+    max-width: 320px;
+    white-space: nowrap;
     margin-right: 20px;
     font-weight: 100;
     font-size: 90px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#result::-webkit-scrollbar {
+    display: none;
 }
 
 #row1,#row2,#row3,#row4,#row5{
