@@ -1,1 +1,1 @@
-Basic Calculator made by HTML, CSS and JavaScript.
+Basic Calculator made with HTML, CSS and JavaScript.
