@@ -25,18 +25,17 @@
     var containsDecimal = "n";
     zeroBtn.onclick = function () {
         lastClick = "0";
-        if (result.innerHTML != "0") {
-            result.innerHTML = currentDisplay + "0";
-            currentDisplay += "0";
-            currentInput += "0";
-            if (result.offsetWidth > 200) {
-                result.style.maxHeight = "70px";
-                result.style.fontSize = "40px";
-                result.style.marginBottom = "40px";
-                var wid = result.scrollWidth;
-                result.scrollTo(wid, 0);
-            }
+        result.innerHTML = currentDisplay + "0";
+        currentDisplay += "0";
+        currentInput += "0";
+        if (result.offsetWidth > 200) {
+            result.style.maxHeight = "70px";
+            result.style.fontSize = "40px";
+            result.style.marginBottom = "40px";
+            var wid = result.scrollWidth;
+            result.scrollTo(wid, 0);
         }
+
     }
 
     oneBtn.onclick = function () {
