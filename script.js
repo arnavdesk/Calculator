@@ -24,16 +24,18 @@
     var lastClick = "`";
     var containsDecimal = "n";
     zeroBtn.onclick = function () {
-        lastClick = "0";
-        result.innerHTML = currentDisplay + "0";
-        currentDisplay += "0";
-        currentInput += "0";
-        if (result.offsetWidth > 200) {
-            result.style.maxHeight = "70px";
-            result.style.fontSize = "40px";
-            result.style.marginBottom = "40px";
-            var wid = result.scrollWidth;
-            result.scrollTo(wid, 0);
+        if (currentInput != "0") {
+            lastClick = "0";
+            result.innerHTML = currentDisplay + "0";
+            currentDisplay += "0";
+            currentInput += "0";
+            if (result.offsetWidth > 200) {
+                result.style.maxHeight = "70px";
+                result.style.fontSize = "40px";
+                result.style.marginBottom = "40px";
+                var wid = result.scrollWidth;
+                result.scrollTo(wid, 0);
+            }
         }
 
     }
@@ -170,7 +172,7 @@
         lastClick = "`";
         currentInput = "";
         currentDisplay = "";
-        result.innerHTML = "0";
+        result.innerHTML = "";
         result.style.maxHeight = "130px";
         result.style.marginBottom = "10px";
         result.style.fontSize = "90px";
